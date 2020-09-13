@@ -1,0 +1,56 @@
+doctype html
+html
+	head
+		meta(name="robots", content="noindex, nofollow")
+		include jade/vars
+		include jade/functions
+		include jade/metatags
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400", rel="stylesheet", type="text/css")
+		link(href="css/style.css", rel="stylesheet")
+		include jade/analytics
+
+	body
+
+		aside.texture
+		aside.loading
+
+		main
+
+			header
+				h1
+					| Hello
+					strong Trivago!
+				img.cloud.c01(src="img/cloud.png")
+				img.cloud.c02(src="img/cloud.png")
+
+			section.letter
+				.textbox.t01
+					h2 hi!
+					p I am a Frontend Developer who lives in Santo Domingo and I'm looking forward to join your team. I've been working for a while developing websites with CSS animations for top brands as Cerveza Presidente.
+
+					p It has been a really good journey but right now i'll like to expand my knowledge and explore the best practices around the world.
+
+					p I've been working with tools like Github, Jade/Haml, Sass/Less And PHP/Ruby. I hope my portfolio can get your attention, since i'm really interested in learning more from Trivago.
+
+					p In the bottom i attached my portfolio, codepend account, linkedin profile and e-mail.
+
+					p I'm really looking forward to hear from you. <em>:)</em>
+
+			include jade/projects
+
+			footer
+
+				.textbox.t03
+					h2 Contact Me
+					.link
+						a.icon.website(href="http://aguacatekun.com", target="_blank")
+						a.icon.codepen(href="http://codepen.io/aguacatekun/", target="_blank")
+						a.icon.linkedin(href="https://www.linkedin.com/in/miguel-rivas-b576bb74", target="_blank")
+					a.mail(href="mailto:jmiguelrivassantos@gmail.com")
+						| jmiguelrivassantos@gmail.com
+
+
+		script(src="https://code.jquery.com/jquery-1.11.2.min.js", type="text/javascript")
+		script(src="js/all.js", type="text/javascript")
+		script(src="js/jquery.mCustomScrollbar.min.js", type="text/javascript")
+		script(src="js/application.js", type="text/javascript")

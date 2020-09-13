@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+aside.texture {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: url(../img/paper.jpg);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+section p, section
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+section
+h1 {
+  font-size: 20pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2pt;
+}
+
+section
+p {
+  font-size: 12pt;
+  font-weight: normal;
+  letter-spacing: 1pt;
+}
+
+.txtBox {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+/* ------------- Attributes ------------- */
+.over {
+  z-index: 3;
+}
+
+.normal {
+  z-index: 2;
+}
+
+.below {
+  z-index: 1;
+}
+
+.contrain {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+/* ------------- Sections ------------- */
+#woods {
+  background: #2d7a4d url(../img/pt_woodsPattern.png);
+  height: 800px;
+}
+
+#woods
+.txtBox {
+  top: 210px;
+}
+
+#woods
+.txtBox
+h1 {
+  font-size: 21pt;
+}
+
+#plane {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: url(../img/pt_plane.png) center no-repeat;
+  margin: -100px;
+  position: absolute;
+  left: 50%;
+  top: 345px;
+}
+
+#plane.flying {
+  position: fixed;
+}
+
+#base {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  top: 240px;
+}
+
+#base
+.house {
+  position: absolute;
+  margin: auto;
+  display: block;
+  width: 240px;
+  left: 50%;
+  margin-left: -120px;
+}
+
+#base
+.road {
+  position: absolute;
+  margin: auto;
+  display: block;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+}
+
+#mountains {
+  background: #67a37f;
+  height: 1060px;
+}
+
+#mountains
+.mountain_01 {
+  position: absolute;
+  top: 4%;
+  right: 0;
+}
+
+#mountains
+.mountain_02 {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+}
+
+#mountains
+.txtBox {
+  top: 470px;
+}
+
+#sea {
+  background: #29abe2;
+  height: 2000px;
+}
+
+#sea
+.txtBox {
+  top: 400px;
+}
+
+#sea
+.boat_02 {
+  position: absolute;
+  top: 200px;
+  right: 5%;
+}
+
+#sea
+.turttle {
+  position: absolute;
+  top: 120px;
+  left: 7%;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: turttle linear 4s infinite;
+          animation: turttle linear 4s infinite;
+}
+
+#sea
+.whirlpool {
+  position: absolute;
+  top: 610px;
+  left: 0;
+  -webkit-animation: rotateZ linear 4s infinite;
+          animation: rotateZ linear 4s infinite;
+}
+
+#island {
+  position: relative;
+  margin: auto;
+  max-width: 887px;
+  height: 861px;
+  top: 830px;
+  background: url(../img/pt_island.png) center no-repeat;
+}
+
+#island
+.boat_01 {
+  position: absolute;
+  top: 130px;
+  right: 240px;
+}
+
+#island
+.house_01 {
+  position: absolute;
+  top: 521px;
+  left: 80px;
+}
+
+#island
+.house_02 {
+  position: absolute;
+  top: 266px;
+  left: 180px;
+}
+
+#island
+.house_03 {
+  position: absolute;
+  top: 650px;
+  right: 190px;
+}
+
+#island
+.house_04 {
+  position: absolute;
+  top: 390px;
+  right: 130px;
+}
+
+#cloudBarrier {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: #fff;
+}
+
+#cloudBarrier:before,
+#cloudBarrier:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 74px;
+  background-repeat: repeat-x;
+}
+
+#cloudBarrier:before {
+  top: -68px;
+  background-image: url(../img/pt_cloudPattern_02.png);
+  background-position: left;
+}
+
+#cloudBarrier:after {
+  bottom: -68px;
+  background-position: right;
+  background-image: url(../img/pt_cloudPattern_03.png);
+}
+
+#sky {
+  background: #29abe2 url(../img/pt_birds.png) center 71px no-repeat;
+  background-attachment: fixed;
+  height: 1600px;
+}
+
+#sky
+.txtBox {
+  top: 440px;
+}
+
+#sky
+.cloud_01 {
+  position: absolute;
+  top: 90px;
+  left: 0;
+}
+
+#sky
+.cloud_02 {
+  position: absolute;
+  top: 638px;
+  right: 0;
+}
+
+#sky
+.cloud_03 {
+  position: absolute;
+  top: 810px;
+  left: 0;
+}
+
+#land {
+  position: relative;
+  background: #dda664;
+  height: 1080px;
+}
+
+#land
+.txtBox {
+  top: 530px;
+}
+
+#land
+.umbrella_01 {
+  position: absolute;
+  top: 280px;
+  left: 30%;
+  -webkit-animation: umbrella alternate 1s infinite;
+          animation: umbrella alternate 1s infinite;
+}
+
+#land
+.umbrella_02 {
+  position: absolute;
+  top: 300px;
+  right: 14%;
+  -webkit-animation: umbrella alternate 1s infinite;
+          animation: umbrella alternate 1s infinite;
+}
+
+#land
+.umbrella_03 {
+  position: absolute;
+  top: 750px;
+  right: 2%;
+  -webkit-animation: umbrella alternate 1s infinite;
+          animation: umbrella alternate 1s infinite;
+}
+
+#land
+.umbrella_04 {
+  position: absolute;
+  top: 800px;
+  left: 0;
+  -webkit-animation: umbrella alternate 1s infinite;
+          animation: umbrella alternate 1s infinite;
+}
+
+#cave {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  top: 90px;
+  background: url(../img/pt_finish_pattern.png) center repeat;
+}
+
+/* ------------- Keyframes ------------- */
+@-webkit-keyframes umbrella
+{
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@keyframes umbrella
+{
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes rotateZ
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateZ
+{
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes turttle
+{
+  0%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25%
+{
+    top: 170px;
+    left: 13%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50%
+{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes turttle
+{
+  0%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25%
+{
+    top: 170px;
+    left: 13%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50%
+{
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100%
+{
+    top: 120px;
+    left: 7%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}

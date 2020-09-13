@@ -1,0 +1,184 @@
+- var pageTitle = "Bootstrap Prototype"
+- var site = "Miguel Rivas"
+- var fbPreview = "http://miguelrivas.me/img/pv_quack.png"
+- var icoPath = "http://miguelrivas.me/img/logo.png"
+- var icoBackground = "#D83434"
+- var description = "Bootstrap Prototype"
+- var keyWords = "bootstrap, proof, prototype"
+- var viewPort = false
+
+doctype
+html
+	head
+		include includes/jade/metatags
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		)
+		link(
+			rel="stylesheet",
+			href="bootstrap/css/bootstrap.min.css"
+		)
+		link(
+			rel="stylesheet"
+			href="includes/css/bootstrap-glyphicons.css"
+		)
+		link(
+			rel="stylesheet"
+			href="includes/css/quack.css"
+		)
+		script(src="includes/js/modernizr-2.6.2.min.js")
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-89989670-1', 'auto');
+			ga('send', 'pageview');
+	body
+		#main
+
+			.navbar.navbar-fixed-top
+				.container
+					button.navbar-toggle(
+						data-target=".navbar-responsive-collapse"
+						data-toggle="collapse"
+						type="button"
+					)
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href="#")
+						img(src="images/logo.png", alt="Your Logo")
+
+					.nav-collapse.collapse.navbar-responsive-collapse
+						ul.nav.navbar-nav
+							li.active: a(href="#") Home
+							li.dropdown
+								a.dropdown-toggle(href="#", data-toggle="dropdown") Services
+									strong.caret
+								ul.dropdown-menu
+									li: a(href="#") Web Design
+									li: a(href="#") Web Development
+									li: a(href="#") SEO
+									li.divider
+									li.dropdown-header More Services
+									li: a(href="#") Content Creation
+									li: a(href="#") Social Media Marketing
+
+			#myCarousel.carousel.slide
+
+				ol.carousel-indicators
+					li.active(data-slide-to="0", data-target="#myCarousel")
+					li(data-slide-to="1", data-target="#myCarousel")
+					li(data-slide-to="2", data-target="#myCarousel")
+
+				.carousel-inner
+
+					#slide1.item.active.fullscrn
+						.carousel-caption
+							h4 Bootstrap 3
+							p learn how to build your quack!
+
+					#slide2.item.fullscrn
+						.carousel-caption
+							h4 Learn stuffs!
+							p aint nobody got time for that
+
+					#slide3.item.fullscrn
+						.carousel-caption
+							h4 Quack
+							p quack quack quack quack quack quack
+
+				a.left.carousel-control(data-slide="prev", href="#myCarousel")
+					span.icon-prev
+				a.right.carousel-control(data-slide="next", href="#myCarousel")
+					span.icon-next
+
+			.container
+				#successAlert.alert.alert-success.alert-block.fade.in
+					button.close(type="buttom", data-dismiss="alert") &times;
+					h4 Sucess!
+					p your info has been send
+
+			#features
+				.container
+					.featuresHeading
+						.col-12
+							h2 Learning to Quack
+							p.lead in just four courses :)
+
+					.featuresInfo.row
+						.col-sm-6.col-lg-3.feature
+							.panel
+								img(src="images/ganzo_small.png", alt="chapter 1")
+								h3.panel-title Chapter 1
+								p oath of the geese
+								a.btn.btn-primary.btn-block(href="#") click me... i dont wanna be alone
+
+						.col-sm-6.col-lg-3.feature
+							.panel
+								img(src="images/ganzo_small.png", alt="chapter 2")
+								h3.panel-title Chapter 2
+								p how to quack in a gang
+								a.btn.btn-danger.btn-block(href="#") click here... im better than the others
+
+						.col-sm-6.col-lg-3.feature
+							.panel
+								img(src="images/ganzo_small.png", alt="chapter 3")
+								h3.panel-title Chapter 3
+								p being the alpha goose
+								a.btn.btn-warning.btn-block(href="#") click here... i have cookies
+
+						.col-sm-6.col-lg-3.feature
+							.panel
+								img(src="images/ganzo_small.png", alt="chapter 4")
+								h3.panel-title Chapter 4
+								p learning how to quack with style
+								a.btn.btn-success.btn-block(href="#") click me... i know how to get into mordor
+
+			#olis.row
+				.container
+					.col-lg-6
+						h1 Fancy Section
+						p.lead a wide independent section that don't need no man
+						p (and doesn't give a quack about anything)
+					#fancyPreview.col-lg-6.fullscrn
+
+			#posts.row
+
+			#form.row
+				.container
+					.col-lg-5.feature
+						form.form-horizontal
+							fieldset
+								legend Quack Us!
+
+								.form-group
+									label.col-lg-2.control-label(for="nameInput") Name:
+									.col-lg-10
+										input#nameInput.form-control(type="text", name="name_input", placeholder="Name")
+
+								.form-group
+									label.col-lg-2.control-label(for="mailInput") Mail:
+									.col-lg-10
+										input#mailInput.form-control(type="text", name="mail_input", placeholder="E-mail")
+
+								.form-group
+									label.col-lg-2.control-label(for="inputMessage") Message:
+									.col-lg-10
+										textarea#inputMessage.form-control(placeholder="Message", rows="3")
+
+								.form-group
+									.col-lg-12
+										a.btn.btn-success.btn-block(href="#")
+											span.glyphicon.glyphicon-ok
+											| Send Quack
+
+	script(src="http://code.jquery.com/jquery.js")
+	script.
+		window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+	script(src="bootstrap/js/bootstrap.min.js")
+	script(src="includes/js/quack.js")

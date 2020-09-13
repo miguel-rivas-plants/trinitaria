@@ -1,0 +1,257 @@
+@import 'sections/loader';
+
+@import 'library/vars';
+@import 'library/functions';
+@import 'library/typography';
+@import 'library/keyframes';
+@import 'sections/projects';
+@import 'vendor/jquery.mCustomScrollbar';
+
+
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: $f_montserrat;
+	overflow-x: hidden;
+}
+
+aside {
+	&.texture {
+		opacity: 0.2;
+		background: url(../img/paper.jpg) center repeat;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: fixed;
+		pointer-events: none;
+		z-index: 10;
+	}
+}
+
+header {
+	position: relative;
+	overflow: hidden;
+	background: #e8ab5e url(../img/header_sky.png) bottom left no-repeat;
+	background-size: 100% !important;
+	min-height: 100vh;
+}
+
+section {
+
+	&.letter {
+		position: relative;
+		background-color: #fff;
+		overflow: hidden;
+	}
+}
+
+.textbox {
+	max-width: 512px;
+	margin: 30px auto;
+	padding: 20px;
+	position: relative;
+	z-index: 5;
+
+	&.t01 {
+		em {
+			color: #f7931d;
+			font-style: normal;
+		}
+
+		h2 {
+			margin: 15px 18px 0px 0px;
+			float: left;
+		}
+
+		&:before, &:after {
+			color: rgba(217, 224, 33, 0.78);
+			font-size: 363pt;
+			position: absolute;
+			top: -130px;
+			transition: all 500ms ease;
+		}
+		&:before {
+			content: "[";
+			left: -155px;
+		}
+
+		&:after {
+			content: "]";
+			right: -155px;
+		}
+	}
+
+	&.t02 {
+		text-align: center;
+		max-width: 100%;
+		z-index: 2;
+		margin-bottom: 620px;
+
+		@media (max-width: 500px) {
+			margin-bottom: 340px;
+		}
+	}
+
+	&.t03 {
+		margin: auto;
+		text-align: center;
+		position: relative;
+		padding: 20px;
+
+		h2 {
+			text-transform: capitalize;
+			font-size: 28pt;
+
+			@media (max-width: 500px) {
+				font-size: 20pt;
+			}
+		}
+
+		.mail {
+			color: #000;
+			text-decoration: none;
+
+			@media (max-width: 500px) {
+				font-size: 9pt;
+			}
+		}
+
+		.icon {
+			padding: 14px 16px;
+			background-color: #981111;
+			border-radius: 50%;
+			text-decoration: none;
+			font-size: 13pt;
+			margin: 13px 6px 20px;
+			color: #fff;
+			transform: rotateY(0deg);
+			transition: all 1s ease;
+			display: inline-block;
+
+			@media (max-width: 500px) {
+				font-size: 11pt;
+				margin: 12px 5px 17px;
+				padding: 10px 12px;
+			}
+
+			&:hover {
+				color: #245a73;
+				background-color: #fff;
+				transform: rotateY(360deg);
+			}
+
+			&.website {
+				padding: 18px 16px 10px;
+				position: relative;
+				top: 4px;
+
+				@media (max-width: 500px) {
+					padding: 14px 12px 6px;
+					top: 4px;
+				}
+
+			}
+
+		}
+	}
+}
+
+ul {
+	padding-left: 17px;
+	font-size: 10pt;
+}
+
+.btn {
+	font-size: 9pt;
+	color: #fff;
+	background-color: #FF002F;
+	padding: 6px 20px;
+	transition: 500ms;
+	display: inline-block;
+	text-decoration: none;
+	&:hover {
+		background-color: #d6de23;
+		color: #000;
+	}
+}
+
+.cloud {
+	position: absolute;
+	opacity: .5;
+	animation-name: flyingCloud;
+	animation-duration: 70s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	left: -690px;
+	pointer-events: none;
+
+	&.c01 { bottom: 320px; animation-delay: 10s; }
+	&.c02 { bottom: 210px; animation-delay: 4s;}
+	&.c03 { bottom: 220px; }
+}
+
+.city {
+	width: 120%;
+	position: absolute;
+	bottom: 0;
+	left: -10%;
+	z-index: 1;
+	height: 1500px;
+	background: url(../img/city.png) no-repeat bottom center;
+	background-size: contain;
+}
+
+footer {
+	background: #207bb7 url(../img/city_inverse.png) top center no-repeat;
+	text-align: center;
+	font-size: 10pt;
+	position: relative;
+	padding: 60px 0 20px;
+	background-size: 120%;
+
+	@media (max-width: 500px) {
+		padding: 150px 0 20px;
+	}
+
+	a {
+		color: #D9E021;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	margin: 0;
+	color: #562406;
+	font-size: 127pt;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 180px;
+
+	@media (max-width: 500px) {
+		font-size: 72pt;
+	}
+
+	strong {
+		font-size: 72pt;
+		display: block;
+
+		@media (max-width: 500px) {
+			font-size: 26pt;
+		}
+	}
+}
+
+h2 {
+	font-size: 38pt;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h1,
+h2 {
+	font-family: $f_bpreplay;
+	font-weight: bold;
+	line-height: 1;
+}

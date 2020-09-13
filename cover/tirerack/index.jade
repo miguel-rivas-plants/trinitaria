@@ -1,0 +1,80 @@
+doctype html
+html
+	head
+		include jade/metatags
+		include jade/common
+		+mainStyles
+	body
+		aside.background
+			.line.red
+			.line.grey
+
+		main
+			header
+				.border
+				img(src="img/design_border_lt.png").corner.left_top
+				img(src="img/design_border_rb.png").corner.right_bottom
+
+			.container
+
+				section#first
+					h1 01
+					.content
+						h2 URL Reduction
+
+						h3 Desktop Version
+						p
+							strong https://www.tirerack.com
+							br
+							| /content
+							br
+							| /tirerack
+							br
+							| /desktop
+							br
+							| /en
+							br
+							| /homepage.html
+
+						h3 Mobile Version
+						p
+							strong https://m.tirerack.com
+							br
+							| /content
+							br
+							| /tirerack
+							br
+							| /mobile
+							br
+							| /en
+							br
+							| /homepage.html
+
+						img(src="img/design_diagram.png")
+
+				section#second
+					h1 02
+					.content
+						h2 Career Section
+
+						p Another thing that will definitely help is adding a cool story about the personnel working at Tire Rack, something that will make the reader meet the human part of Tire Rack. This part will be addressing: "Who I'm gonna be working with?"
+
+						p Also, a video/image that guides the user through the installations will display the structural part of Tire Rack. This part will be addressing: "Where I'm gonna be working?"
+
+						img(src="img/design_inside.png")
+
+				section#third
+					h1 03
+					.content
+						h2 Branding Section
+
+						p A place where you can download the latest logo of the company and also explain how to use it.
+
+						p It happens often that retailers or partners want your logo and it's not available in a good resolution.
+
+						.imgBox
+							img(src="img/design_branding.png").i01
+							img(src="img/design_branding.png").i02
+							img(src="img/design_branding.png").i03
+
+		+mainScripts

@@ -1,0 +1,192 @@
+body
+{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+textarea
+{
+	resize: none;
+}
+
+.glyphicon
+{
+	margin: 0 4px;
+}
+
+.navbar
+{
+	background-color: rgba(255, 255, 255, 0.55);
+	border: 1px solid rgba(34, 34, 34, 0.07);
+}
+
+.navbar-nav
+{
+	& > .active > a,
+	& > .active > a:hover,
+	& > .active > a:focus
+	& > .open > a,
+	& > .open > a:hover,
+	& > .open > a:focus
+	{
+		background-color: rgba(0, 0, 0, 0.06);
+	}
+}
+
+.dropdown-menu
+{
+	background-color: rgba(0, 0, 0, 0.01);
+
+	.divider
+	{
+		background-color: rgba(0, 0, 0, 0.14);
+	}
+}
+
+.navbar-brand
+{
+	padding: 13px 15px;
+}
+
+.row
+{
+	margin: auto !important;
+}
+
+#myCarousel
+{
+	.item
+	{
+		height: 600px;
+		background-size: auto 80%;
+	}
+}
+
+.carousel-caption
+{
+	font-size: 12px;
+
+	h4
+	{
+		font-size: 40px;
+	}
+}
+
+#slide1
+{
+	background: #f7c979 url('../../images/slide_big_01.png') bottom right no-repeat;
+}
+
+#slide2
+{
+	background: #3C84B2 url('../../images/slide_big_01.png') bottom right no-repeat;
+}
+
+#slide3
+{
+	background: #ef596b url('../../images/slide_big_01.png') bottom right no-repeat;
+}
+
+.carousel-control
+{
+	background: none !important;
+}
+
+.alert
+{
+	margin-top: 20px;
+	display: none;
+}
+
+#features
+{
+	background-color: #DDFC84;
+}
+
+.panel
+{
+	background-color: transparent;
+}
+
+.featuresInfo
+{
+	text-align: center;
+
+	img
+	{
+		width: 200px;
+		display: inline-block;
+		margin: 10px 0;
+	}
+	.panel
+	{
+		padding: 15px 0;
+		border: none;
+		border-radius: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+#olis
+{
+	color: #4798D2;
+	//text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+	background: #d3e6f2;
+	padding: 6px 0;
+
+	p
+	{
+		-webkit-margin-after: 0 !important;
+	}
+
+	#fancyPreview
+	{
+		height: 600px;
+		background: url('../../images/ganzo.png') center center no-repeat;
+		background-size: contain;
+		margin: 15px 0;
+	}
+}
+
+#form
+{
+	height: 850px;
+	background: #333333 url('../../images/super_ganzo.png') 95% 260% no-repeat;
+
+	label, legend
+	{
+		color: #fff;
+	}
+
+	legend
+	{
+		border: none;
+	}
+
+	form
+	{
+		margin: 35px 0;
+	}
+
+}
+
+@media (max-width: 400px)
+{
+	#myCarousel
+	{
+		.item
+		{
+			background-size: auto 50%;
+		}
+	}
+}
+
+@media (max-width: 992px)
+{
+	#form
+	{
+		height: auto;
+		background: #333333;
+	}
+}

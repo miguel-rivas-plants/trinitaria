@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Prototype</title>
+    <meta charset="utf-8">
+    <meta property="og:title" content="Bootstrap Prototype">
+    <meta property="og:site_name" content="Miguel Rivas">
+    <meta property="og:description" content="Bootstrap Prototype">
+    <meta name="keywords" content="bootstrap, proof, prototype">
+    <meta name="description" content="Bootstrap Prototype">
+    <meta property="og:image" content="http://miguelrivas.me/img/pv_quack.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="icon" type="image/png" href="http://miguelrivas.me/img/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="http://miguelrivas.me/img/logo.png">
+    <link rel="apple-touch-icon" href="http://miguelrivas.me/img/logo.png">
+    <meta name="msapplication-TileColor" content="#D83434">
+    <meta name="msapplication-TileImage" content="http://miguelrivas.me/img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="includes/css/quack.css">
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-89989670-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+          <button data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand"><img src="images/logo.png" alt="Your Logo"></a>
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Services<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">SEO</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">More Services</li>
+                  <li><a href="#">Content Creation</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-slide-to="0" data-target="#myCarousel" class="active"></li>
+          <li data-slide-to="1" data-target="#myCarousel"></li>
+          <li data-slide-to="2" data-target="#myCarousel"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div id="slide1" class="item active fullscrn">
+            <div class="carousel-caption">
+              <h4>Bootstrap 3</h4>
+              <p>learn how to build your quack!</p>
+            </div>
+          </div>
+          <div id="slide2" class="item fullscrn">
+            <div class="carousel-caption">
+              <h4>Learn stuffs!</h4>
+              <p>aint nobody got time for that</p>
+            </div>
+          </div>
+          <div id="slide3" class="item fullscrn">
+            <div class="carousel-caption">
+              <h4>Quack</h4>
+              <p>quack quack quack quack quack quack</p>
+            </div>
+          </div>
+        </div><a data-slide="prev" href="#myCarousel" class="left carousel-control"><span class="icon-prev"></span></a><a data-slide="next" href="#myCarousel" class="right carousel-control"><span class="icon-next"></span></a>
+      </div>
+      <div class="container">
+        <div id="successAlert" class="alert alert-success alert-block fade in">
+          <button type="buttom" data-dismiss="alert" class="close">&times;</button>
+          <h4>Sucess!</h4>
+          <p>your info has been send</p>
+        </div>
+      </div>
+      <div id="features">
+        <div class="container">
+          <div class="featuresHeading">
+            <div class="col-12">
+              <h2>Learning to Quack</h2>
+              <p class="lead">in just four courses :)</p>
+            </div>
+          </div>
+          <div class="featuresInfo row">
+            <div class="col-sm-6 col-lg-3 feature">
+              <div class="panel"><img src="images/ganzo_small.png" alt="chapter 1">
+                <h3 class="panel-title">Chapter 1</h3>
+                <p>oath of the geese</p><a href="#" class="btn btn-primary btn-block">click me... i dont wanna be alone</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature">
+              <div class="panel"><img src="images/ganzo_small.png" alt="chapter 2">
+                <h3 class="panel-title">Chapter 2</h3>
+                <p>how to quack in a gang</p><a href="#" class="btn btn-danger btn-block">click here... im better than the others</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature">
+              <div class="panel"><img src="images/ganzo_small.png" alt="chapter 3">
+                <h3 class="panel-title">Chapter 3</h3>
+                <p>being the alpha goose</p><a href="#" class="btn btn-warning btn-block">click here... i have cookies</a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 feature">
+              <div class="panel"><img src="images/ganzo_small.png" alt="chapter 4">
+                <h3 class="panel-title">Chapter 4</h3>
+                <p>learning how to quack with style</p><a href="#" class="btn btn-success btn-block">click me... i know how to get into mordor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="olis" class="row">
+        <div class="container">
+          <div class="col-lg-6">
+            <h1>Fancy Section</h1>
+            <p class="lead">a wide independent section that don't need no man</p>
+            <p>(and doesn't give a quack about anything)</p>
+          </div>
+          <div id="fancyPreview" class="col-lg-6 fullscrn"></div>
+        </div>
+      </div>
+      <div id="posts" class="row"></div>
+      <div id="form" class="row">
+        <div class="container">
+          <div class="col-lg-5 feature">
+            <form class="form-horizontal">
+              <fieldset>
+                <legend>Quack Us!</legend>
+                <div class="form-group">
+                  <label for="nameInput" class="col-lg-2 control-label">Name:</label>
+                  <div class="col-lg-10">
+                    <input id="nameInput" type="text" name="name_input" placeholder="Name" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="mailInput" class="col-lg-2 control-label">Mail:</label>
+                  <div class="col-lg-10">
+                    <input id="mailInput" type="text" name="mail_input" placeholder="E-mail" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage" class="col-lg-2 control-label">Message:</label>
+                  <div class="col-lg-10">
+                    <textarea id="inputMessage" placeholder="Message" rows="3" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-12"><a href="#" class="btn btn-success btn-block"><span class="glyphicon glyphicon-ok"></span>Send Quack</a></div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="includes/js/quack.js"></script>
+</html>
