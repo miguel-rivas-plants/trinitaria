@@ -1,0 +1,87 @@
+[submodule "project/manglar"]
+	path = project/manglar
+	url = https://github.com/miguel-rivas-plants/manglar.git
+[submodule "project/cocotero"]
+	path = project/cocotero
+	url = https://github.com/miguel-rivas-plants/cocotero.git
+[submodule "project/platanero"]
+	path = project/platanero
+	url = https://github.com/miguel-rivas-plants/platanero.git
+[submodule "project/rosal"]
+	path = project/rosal
+	url = https://github.com/miguel-rivas-plants/rosal.git
+[submodule "project/ylang-ylang"]
+	path = project/ylang-ylang
+	url = https://github.com/miguel-rivas-plants/ylang-ylang.git
+[submodule "project/lechuga"]
+	path = project/lechuga
+	url = https://github.com/miguel-rivas-plants/lechuga.git
+[submodule "project/loto"]
+	path = project/loto
+	url = https://github.com/miguel-rivas-plants/loto.git
+[submodule "project/pilea"]
+	path = project/pilea
+	url = https://github.com/miguel-rivas-plants/pilea.git
+[submodule "project/venus"]
+	path = project/venus
+	url = https://github.com/miguel-rivas-plants/venus.git
+[submodule "project/cactus"]
+	path = project/cactus
+	url = https://github.com/miguel-rivas-plants/cactus.git
+[submodule "project/helecho"]
+	path = project/helecho
+	url = https://github.com/miguel-rivas-plants/helecho.git
+[submodule "project/orquidea"]
+	path = project/orquidea
+	url = https://github.com/miguel-rivas-plants/orquidea.git
+[submodule "project/cerezo"]
+	path = project/cerezo
+	url = https://github.com/miguel-rivas-plants/cerezo.git
+[submodule "project/menta"]
+	path = project/menta
+	url = https://github.com/miguel-rivas-plants/menta.git
+[submodule "project/eucalipto"]
+	path = project/eucalipto
+	url = https://github.com/miguel-rivas-plants/eucalipto.git
+[submodule "project/limoncillo"]
+	path = project/limoncillo
+	url = https://github.com/miguel-rivas-plants/limoncillo.git
+[submodule "project/trebol"]
+	path = project/trebol
+	url = https://github.com/miguel-rivas-plants/trebol.git
+[submodule "project/almendro"]
+	path = project/almendro
+	url = https://github.com/miguel-rivas-plants/almendro.git
+[submodule "project/naranjo"]
+	path = project/naranjo
+	url = https://github.com/miguel-rivas-plants/naranjo.git
+[submodule "project/caoba"]
+	path = project/caoba
+	url = https://github.com/miguel-rivas-plants/caoba.git
+[submodule "project/roble"]
+	path = project/roble
+	url = https://github.com/miguel-rivas-plants/roble.git
+[submodule "project/manzanilla"]
+	path = project/manzanilla
+	url = https://github.com/miguel-rivas-plants/manzanilla.git
+[submodule "project/framboyan"]
+	path = project/framboyan
+	url = https://github.com/miguel-rivas-plants/framboyan.git
+[submodule "project/trigo"]
+	path = project/trigo
+	url = https://github.com/miguel-rivas-plants/trigo.git
+[submodule "project/pino"]
+	path = project/pino
+	url = https://github.com/miguel-rivas-plants/pino.git
+[submodule "project/bambu"]
+	path = project/bambu
+	url = https://github.com/miguel-rivas-plants/bambu.git
+[submodule "project/canelo"]
+	path = project/canelo
+	url = https://github.com/miguel-rivas-plants/canelo.git
+[submodule "project/lavanda"]
+	path = project/lavanda
+	url = https://github.com/miguel-rivas-plants/lavanda.git
+[submodule "project/sabila"]
+	path = project/sabila
+	url = https://github.com/miguel-rivas-plants/sabila.git
