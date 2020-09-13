@@ -27,5 +27,7 @@ git submodule add https://github.com/miguel-rivas-plants/bambu.git project/bambu
 git submodule add https://github.com/miguel-rivas-plants/canelo.git project/canelo
 git submodule add https://github.com/miguel-rivas-plants/lavanda.git project/lavanda
 git submodule add https://github.com/miguel-rivas-plants/sabila.git project/sabila
+git submodule add https://github.com/miguel-rivas-plants/palmera.git project/palmera
+git submodule add https://github.com/miguel-rivas-plants/amapola.git project/amapola
 
 git submodule init && git submodule update

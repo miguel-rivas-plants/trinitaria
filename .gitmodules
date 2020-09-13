@@ -85,3 +85,9 @@
 [submodule "project/sabila"]
 	path = project/sabila
 	url = https://github.com/miguel-rivas-plants/sabila.git
+[submodule "project/palmera"]
+	path = project/palmera
+	url = https://github.com/miguel-rivas-plants/palmera.git
+[submodule "project/amapola"]
+	path = project/amapola
+	url = https://github.com/miguel-rivas-plants/amapola.git
